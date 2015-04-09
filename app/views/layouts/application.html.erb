@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CourseInfo</title>
+	<%= stylesheet_link_tag    "application", media: "all" %>
+	<%= javascript_include_tag "application" %>
+ 	<%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to '首頁', courses_path %></li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to '新增課程', new_course_path %></li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+</header>
+<%= yield %>
+
+</body>
+</html>

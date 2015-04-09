@@ -1,0 +1,25 @@
+<%= form_for @course do |f| %>
+  <div>
+    <%= f.label '課程名稱' %>
+    <%= f.text_field :name %>
+  </div>
+   <div>
+    <%= f.label '上課時間' %>
+    <%= f.text_field :time %>
+  </div>
+  <div>
+    <%= f.label '授課教師' %>
+    <%= f.text_field :teacher %>
+  </div>
+  <div>
+    <%= f.label '上課教室' %>
+    <%= f.text_field :classroom %>
+  </div>
+  <div>
+    <%= f.label '學分數' %>
+    <%= f.text_field :credit %>
+  </div> 
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

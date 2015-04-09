@@ -1,0 +1,6 @@
+<%= form_tag courses_path ,method:"get" do |f|%>
+	課程名稱<%=text_field_tag "name" %> 
+	上課時間<%=text_field_tag "time" %>
+	授課教師<%=text_field_tag"teacher" %>
+	<%=submit_tag "search" %>
+<%end%>

@@ -1,0 +1,10 @@
+<h1>歡迎使用課程查詢系統</h1>
+<div>
+    	<%= render "query"%>
+</div>
+<h2>課程清單</h2>
+<% @courses.each do |course| %>
+  <h3>課程名稱:<%= course.name %></h3>
+  <p>上課時間:<%= course.time %><pre>授課教師:<%= course.teacher %></pre><pre>上課教室:<%= course.classroom %></pre><pre>學分數:<%= course.credit %></pre></p>
+  <h5><%= link_to '編輯課程', edit_course_path(course)%>     <%= link_to '刪除課程', course, method: :delete %></h5>
+<% end %>
